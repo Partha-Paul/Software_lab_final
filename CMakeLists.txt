@@ -9,7 +9,8 @@ include_directories(${GTEST_DIR}/googletest/include)
 # Add your source files
 add_executable(${PROJECT_NAME} 
 		test/test.cpp
-		src/student.cpp
+		src/factory.cpp
+		src/vehicle.cpp
 )
 
 # Link Google Test libraries
