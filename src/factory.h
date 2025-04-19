@@ -1,23 +1,40 @@
-#include "factory.h"
+#pragma once
+#include <memory>
+#include <string>
 
-std::string Car::drive() const {
-    return "Driving a car";
-}
+// Enum needs to be declared before being used in the factory
+enum class VehicleType {
+    CAR,
+    BIKE,
+    TRUCK
+};
 
-std::string Bike::drive() const {
-    return "Riding a bike";
-}
+// Base class
+class Vehicle {
+public:
+    virtual std::string drive() const = 0;
+    virtual ~Vehicle() = default;
+};
 
-std::string Truck::drive() const {
-    return "Driving a truck";
-}
+// Concrete classes
+class Car : public Vehicle {
+public:
+    std::string drive() const override;
+};
 
-std::unique_ptr<Vehicle> VehicleFactory::createVehicle(VehicleType type) {
-    switch (type) {
-        case VehicleType::CAR:   return std::make_unique<Car>();
-        case VehicleType::BIKE:  return std::make_unique<Bike>();
-        case VehicleType::TRUCK: return std::make_unique<Truck>();
-        default: return nullptr;
-    }
-}
+class Bike : public Vehicle {
+public:
+    std::string drive() const override;
+};
+
+class Truck : public Vehicle {
+public:
+    std::string drive() const override;
+};
+
+// Factory class
+class VehicleFactory {
+public:
+    static std::unique_ptr<Vehicle> createVehicle(VehicleType type);
+};
 
