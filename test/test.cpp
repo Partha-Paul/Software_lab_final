@@ -15,4 +15,8 @@ TEST(VehicleFactoryTest, TruckDrive) {
     auto truck = VehicleFactory::createVehicle(VehicleType::TRUCK);
     EXPECT_EQ(truck->drive(), "Driving a truck");
 }
+TEST(VehicleFactoryTest, TruckDrive) {
+    auto truck = VehicleFactory::createVehicle(VehicleType::truck);
+    EXPECT_EQ(truck->drive(), "Driving a truck");
+}
 
