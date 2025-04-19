@@ -129,29 +129,29 @@ student/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/student.dir/build.make CMakeFiles/student.dir/build
 .PHONY : student/fast
 
-src/student.o: src/student.cpp.o
-.PHONY : src/student.o
+src/factory.o: src/factory.cpp.o
+.PHONY : src/factory.o
 
 # target to build an object file
-src/student.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/student.dir/build.make CMakeFiles/student.dir/src/student.cpp.o
-.PHONY : src/student.cpp.o
+src/factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/student.dir/build.make CMakeFiles/student.dir/src/factory.cpp.o
+.PHONY : src/factory.cpp.o
 
-src/student.i: src/student.cpp.i
-.PHONY : src/student.i
+src/factory.i: src/factory.cpp.i
+.PHONY : src/factory.i
 
 # target to preprocess a source file
-src/student.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/student.dir/build.make CMakeFiles/student.dir/src/student.cpp.i
-.PHONY : src/student.cpp.i
+src/factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/student.dir/build.make CMakeFiles/student.dir/src/factory.cpp.i
+.PHONY : src/factory.cpp.i
 
-src/student.s: src/student.cpp.s
-.PHONY : src/student.s
+src/factory.s: src/factory.cpp.s
+.PHONY : src/factory.s
 
 # target to generate assembly for a file
-src/student.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/student.dir/build.make CMakeFiles/student.dir/src/student.cpp.s
-.PHONY : src/student.cpp.s
+src/factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/student.dir/build.make CMakeFiles/student.dir/src/factory.cpp.s
+.PHONY : src/factory.cpp.s
 
 test/test.o: test/test.cpp.o
 .PHONY : test/test.o
@@ -186,9 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... student"
-	@echo "... src/student.o"
-	@echo "... src/student.i"
-	@echo "... src/student.s"
+	@echo "... src/factory.o"
+	@echo "... src/factory.i"
+	@echo "... src/factory.s"
 	@echo "... test/test.o"
 	@echo "... test/test.i"
 	@echo "... test/test.s"

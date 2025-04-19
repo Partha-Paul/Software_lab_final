@@ -1,13 +1,23 @@
 #include "factory.h"
 
-Shape* ShapeFactory::createShape(const string& type, float a, float b) {
-    if (type == "circle") {
-        return new Circle(a);
-    } else if (type == "rectangle") {
-        return new Rectangle(a, b);
-    } else if (type == "triangle") {
-        return new Triangle(a, b);
-    } else {
-        return nullptr;
+std::string Car::drive() const {
+    return "Driving a car";
+}
+
+std::string Bike::drive() const {
+    return "Riding a bike";
+}
+
+std::string Truck::drive() const {
+    return "Driving a truck";
+}
+
+std::unique_ptr<Vehicle> VehicleFactory::createVehicle(VehicleType type) {
+    switch (type) {
+        case VehicleType::CAR:   return std::make_unique<Car>();
+        case VehicleType::BIKE:  return std::make_unique<Bike>();
+        case VehicleType::TRUCK: return std::make_unique<Truck>();
+        default: return nullptr;
     }
 }
+

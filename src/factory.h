@@ -1,13 +1,23 @@
-#ifndef FACTORY_H
-#define FACTORY_H
+#include "factory.h"
 
-#include "shape.h"
-#include <memory>
-#include <string>
+std::string Car::drive() const {
+    return "Driving a car";
+}
 
-class ShapeFactory {
-public:
-    static Shape* createShape(const string& type, float a, float b = 0);
-};
+std::string Bike::drive() const {
+    return "Riding a bike";
+}
 
-#endif
+std::string Truck::drive() const {
+    return "Driving a truck";
+}
+
+std::unique_ptr<Vehicle> VehicleFactory::createVehicle(VehicleType type) {
+    switch (type) {
+        case VehicleType::CAR:   return std::make_unique<Car>();
+        case VehicleType::BIKE:  return std::make_unique<Bike>();
+        case VehicleType::TRUCK: return std::make_unique<Truck>();
+        default: return nullptr;
+    }
+}
+

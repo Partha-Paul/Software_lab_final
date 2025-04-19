@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/partha/Desktop/practice/src/student.cpp" "CMakeFiles/student.dir/src/student.cpp.o" "gcc" "CMakeFiles/student.dir/src/student.cpp.o.d"
+  "/home/partha/Desktop/practice/src/factory.cpp" "CMakeFiles/student.dir/src/factory.cpp.o" "gcc" "CMakeFiles/student.dir/src/factory.cpp.o.d"
   "/home/partha/Desktop/practice/test/test.cpp" "CMakeFiles/student.dir/test/test.cpp.o" "gcc" "CMakeFiles/student.dir/test/test.cpp.o.d"
   )
 

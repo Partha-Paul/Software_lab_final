@@ -83,30 +83,30 @@ CMakeFiles/student.dir/test/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/student.dir/test/test.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/partha/Desktop/practice/test/test.cpp -o CMakeFiles/student.dir/test/test.cpp.s
 
-CMakeFiles/student.dir/src/student.cpp.o: CMakeFiles/student.dir/flags.make
-CMakeFiles/student.dir/src/student.cpp.o: /home/partha/Desktop/practice/src/student.cpp
-CMakeFiles/student.dir/src/student.cpp.o: CMakeFiles/student.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/partha/Desktop/practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/student.dir/src/student.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/student.dir/src/student.cpp.o -MF CMakeFiles/student.dir/src/student.cpp.o.d -o CMakeFiles/student.dir/src/student.cpp.o -c /home/partha/Desktop/practice/src/student.cpp
+CMakeFiles/student.dir/src/factory.cpp.o: CMakeFiles/student.dir/flags.make
+CMakeFiles/student.dir/src/factory.cpp.o: /home/partha/Desktop/practice/src/factory.cpp
+CMakeFiles/student.dir/src/factory.cpp.o: CMakeFiles/student.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/partha/Desktop/practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/student.dir/src/factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/student.dir/src/factory.cpp.o -MF CMakeFiles/student.dir/src/factory.cpp.o.d -o CMakeFiles/student.dir/src/factory.cpp.o -c /home/partha/Desktop/practice/src/factory.cpp
 
-CMakeFiles/student.dir/src/student.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/student.dir/src/student.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/partha/Desktop/practice/src/student.cpp > CMakeFiles/student.dir/src/student.cpp.i
+CMakeFiles/student.dir/src/factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/student.dir/src/factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/partha/Desktop/practice/src/factory.cpp > CMakeFiles/student.dir/src/factory.cpp.i
 
-CMakeFiles/student.dir/src/student.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/student.dir/src/student.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/partha/Desktop/practice/src/student.cpp -o CMakeFiles/student.dir/src/student.cpp.s
+CMakeFiles/student.dir/src/factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/student.dir/src/factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/partha/Desktop/practice/src/factory.cpp -o CMakeFiles/student.dir/src/factory.cpp.s
 
 # Object files for target student
 student_OBJECTS = \
 "CMakeFiles/student.dir/test/test.cpp.o" \
-"CMakeFiles/student.dir/src/student.cpp.o"
+"CMakeFiles/student.dir/src/factory.cpp.o"
 
 # External object files for target student
 student_EXTERNAL_OBJECTS =
 
 student: CMakeFiles/student.dir/test/test.cpp.o
-student: CMakeFiles/student.dir/src/student.cpp.o
+student: CMakeFiles/student.dir/src/factory.cpp.o
 student: CMakeFiles/student.dir/build.make
 student: /home/partha/Desktop/googletest/build/lib/libgtest.a
 student: /home/partha/Desktop/googletest/build/lib/libgtest_main.a

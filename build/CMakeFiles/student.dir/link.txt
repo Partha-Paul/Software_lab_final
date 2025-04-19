@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/student.dir/test/test.cpp.o CMakeFiles/student.dir/src/student.cpp.o -o student  /home/partha/Desktop/googletest/build/lib/libgtest.a /home/partha/Desktop/googletest/build/lib/libgtest_main.a 
+/usr/bin/c++ CMakeFiles/student.dir/test/test.cpp.o CMakeFiles/student.dir/src/factory.cpp.o -o student  /home/partha/Desktop/googletest/build/lib/libgtest.a /home/partha/Desktop/googletest/build/lib/libgtest_main.a 
