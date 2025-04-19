@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "factory.h"
+#include "../src/factory.h"
 
 TEST(VehicleFactoryTest, CarDrive) {
     auto car = VehicleFactory::createVehicle(VehicleType::CAR);
